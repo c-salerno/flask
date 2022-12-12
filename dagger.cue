@@ -16,9 +16,6 @@ dagger.#Plan & {
 
 		// Test
 		test: python.#Run & {
-			name:   "test"
-			source: actions.source.output
-
 			script: contents: "tox -e py310"
 		}
 	}
