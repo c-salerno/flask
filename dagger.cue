@@ -16,7 +16,8 @@ dagger.#Plan & {
 
 		// Test
 		test: python.#Run & {
-			script: contents: "tox -e py310"
+			script: contents: "tox"
+			args: ["-e", "py310"]
 		}
 	}
 }
