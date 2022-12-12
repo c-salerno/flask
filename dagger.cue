@@ -52,6 +52,7 @@ dagger.#Plan & {
 				command: {
 					name: "tox"
 					args: ["-e", "py310"]
+				}
 			}
 			
 			tox_result: _op.result
