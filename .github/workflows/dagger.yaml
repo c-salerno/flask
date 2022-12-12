@@ -26,5 +26,5 @@ jobs:
         uses: dagger/dagger-for-github@v3
         with:
           cmds: |
-            project update
+            project init
             do test  # tox -e py310
