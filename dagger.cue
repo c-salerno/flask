@@ -15,7 +15,7 @@ dagger.#Plan & {
 		}
 
 		// Test
-		test: python.#Script & {
+		test: python.#Run & {
 			name:   "test"
 			source: actions.source.output
 
