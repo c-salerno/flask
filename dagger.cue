@@ -47,11 +47,14 @@ dagger.#Plan & {
             workdir: "/app"
         }
 
-		test: #Run & {
-			command: {
-				name: "tox"
-				args: ["-e", "py310"]
+		test: {
+			_op: #Run & {
+				command: {
+					name: "tox"
+					args: ["-e", "py310"]
 			}
+			
+			tox_result: _op.result
 		}
 	}
 }
