@@ -27,4 +27,5 @@ jobs:
         with:
           cmds: |
             project init
+            project update
             do test  # tox -e py310
