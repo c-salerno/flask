@@ -55,7 +55,8 @@ dagger.#Plan & {
 				}
 			}
 			
-			tox_result: _op.result
+			success: _op.success
+			error: _op.error.message
 		}
 	}
 }
